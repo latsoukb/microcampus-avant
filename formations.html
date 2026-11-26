@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>MicroCampus</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-tint": "#166534", "on-primary": "#ffffff", "tertiary-fixed": "#ffddb8", "tertiary-fixed-dim": "#ffb95f", "surface-bright": "#fafafa", "on-secondary": "#ffffff", "on-secondary-fixed": "#002113", "error-container": "#ffdad6", "tertiary-container": "#361f00", "on-error-container": "#93000a", "on-surface": "#111111", "error": "#ba1a1a", "secondary-fixed": "#6ffbbe", "background": "#fafafa", "on-secondary-fixed-variant": "#005236", "secondary-fixed-dim": "#4edea3", "on-tertiary-fixed": "#2a1700", "on-tertiary-container": "#c27c00", "surface-container-low": "#f5f5f5", "inverse-primary": "#86efac", "surface-dim": "#cccccc", "on-background": "#111111", "inverse-surface": "#111111", "primary-container": "#14532d", "surface-container-highest": "#d4d4d4", "primary": "#166534", "surface-container-high": "#e5e5e5", "on-primary-fixed": "#052e16", "surface": "#fafafa", "secondary": "#006c49", "on-primary-container": "#14532d", "on-secondary-container": "#00714d", "surface-container": "#eeeeee", "surface-container-lowest": "#ffffff", "on-tertiary": "#ffffff", "on-surface-variant": "#43474d", "secondary-container": "#6cf8bb", "outline": "#74777e", "outline-variant": "#c4c6ce", "on-tertiary-fixed-variant": "#653e00", "surface-variant": "#e5e5e5", "on-primary-fixed-variant": "#14532d", "primary-fixed-dim": "#86efac", "tertiary": "#190c00", "on-error": "#ffffff", "inverse-on-surface": "#f5f5f5", "primary-fixed": "#bbf7d0" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-sm": "0.75rem", "gutter": "1rem", "gutter-sm": "0.75rem", "space-2xl": "2.5rem", "space-xs": "0.5rem", "margin-compact": "1rem", "space-md": "1rem", "space-lg": "1.5rem", "space-2xs": "0.25rem", "space-xl": "2rem", "margin": "1.25rem" }, fontFamily: { "body-lg": ["Inter"], "amount-display": ["Inter"], "label-sm": ["Inter"], "body-md": ["Inter"], "body-sm": ["Inter"], "amount-card": ["Inter"], "headline-sm": ["Inter"], "headline-md": ["Inter"], "display-lg": ["Inter"], "headline-lg": ["Inter"], "title-md": ["Inter"], "label-md": ["Inter"] }, fontSize: { "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }], "amount-display": ["32px", { lineHeight: "38px", letterSpacing: "-0.03em", fontWeight: "700" }], "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.04em", fontWeight: "600" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }], "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }], "amount-card": ["24px", { lineHeight: "30px", letterSpacing: "-0.02em", fontWeight: "700" }], "headline-sm": ["18px", { lineHeight: "24px", letterSpacing: "-0.01em", fontWeight: "600" }], "headline-md": ["22px", { lineHeight: "28px", letterSpacing: "-0.015em", fontWeight: "600" }], "display-lg": ["36px", { lineHeight: "44px", letterSpacing: "-0.03em", fontWeight: "700" }], "headline-lg": ["28px", { lineHeight: "34px", letterSpacing: "-0.02em", fontWeight: "700" }], "title-md": ["16px", { lineHeight: "22px", letterSpacing: "-0.005em", fontWeight: "600" }], "label-md": ["13px", { lineHeight: "18px", letterSpacing: "0.01em", fontWeight: "500" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;background-color:#fafafa;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,20px);}.pt-safe{padding-top:env(safe-area-inset-top,44px);}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  <script>try{var t=localStorage.getItem('mc-theme');if(t=='dark'||(!t&&matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.classList.add('dark')}catch(e){}</script><link rel="icon" href="logo.png"><link rel="apple-touch-icon" href="logo.png"><link rel="manifest" href="manifest.json"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="MicroCampus"><meta name="apple-mobile-web-app-status-bar-style" content="default"><style>
+html.dark{color-scheme:dark}
+html.dark .bg-surface,html.dark body{background:#000000!important}
+html.dark .bg-surface\/85{background:rgba(0,0,0,.88)!important}
+html.dark .bg-surface-container-low,html.dark .bg-surface-container-low\/60{background:#111111!important}
+html.dark .bg-surface-container,html.dark .hover\:bg-surface-container:hover{background:#171717!important}
+html.dark .bg-surface-container-high,html.dark .hover\:bg-surface-container-high:hover{background:#1f1f1f!important}
+html.dark .bg-surface-container-highest{background:#262626!important}
+html.dark .bg-surface-container-lowest,html.dark .bg-surface-container-lowest\/95,html.dark .bg-surface-container-lowest\/80{background:#0a0a0a!important}
+html.dark .bg-surface-variant{background:#1f1f1f!important}
+html.dark .bg-primary{background:#16a34a!important}
+html.dark .bg-primary\/60{background:rgba(0,0,0,.6)!important}
+html.dark .bg-primary-container{background:#14532d!important}
+html.dark .bg-primary-fixed,html.dark .bg-primary-fixed-dim{background:#14532d!important}
+html.dark .bg-surface-tint\/20{background:rgba(34,197,94,.2)!important}
+html.dark .ring-surface-container-high{--tw-ring-color:#404040!important}
+html.dark .text-primary,html.dark .text-on-surface{color:#ffffff!important}
+html.dark .text-primary-container,html.dark .text-on-primary-container{color:#bbf7d0!important}
+html.dark .text-on-primary-fixed,html.dark .text-on-primary-fixed-variant{color:#bbf7d0!important}
+html.dark .text-on-surface-variant{color:#a3a3a3!important}
+html.dark .text-secondary{color:#4ade80!important}
+html.dark .border-outline-variant,html.dark [class*="border-surface-container"]{border-color:#262626!important}
+html.dark input,html.dark select,html.dark textarea{color:#ffffff;background:#111111}
+html.dark .bg-primary-container .text-primary-container,html.dark .bg-primary-container.text-on-primary{color:#fff!important}
+html.dark header{box-shadow:0 1px 8px rgba(0,0,0,.6)!important}
+html.dark .bg-secondary-fixed\/30.text-on-secondary-fixed-variant,html.dark .bg-secondary-fixed\/40.text-on-secondary-fixed-variant,html.dark .bg-secondary-container\/40.text-on-secondary-fixed-variant,html.dark .bg-secondary-fixed\/50.text-on-secondary-fixed,html.dark .bg-secondary-fixed\/60.text-on-secondary-fixed,html.dark .bg-secondary-container\/40.text-on-secondary-container{background:rgba(22,163,74,.32)!important;color:#bbf7d0!important}
+html.dark .bg-secondary-fixed\/30.text-on-secondary-fixed-variant .bg-secondary,html.dark .bg-secondary-fixed\/40.text-on-secondary-fixed-variant .bg-secondary,html.dark .bg-secondary-fixed\/50.text-on-secondary-fixed .bg-secondary,html.dark .bg-secondary-fixed\/60.text-on-secondary-fixed .bg-secondary,html.dark .bg-secondary-container\/40.text-on-secondary-container .bg-secondary{background:#ffffff!important}
+.bg-primary\/60{background:rgba(0,0,0,.6)!important}
+</style></head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen" data-page="formations"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.05)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-xs"><img alt="MicroCampus Logo" class="h-8 w-auto object-contain" src="logo.png"/><span class="font-headline-sm text-headline-sm text-primary-container tracking-tight">MicroCampus</span></div><div class="flex items-center gap-space-xs"><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span></button><a class="w-11 h-11 flex items-center justify-center" data-path="profil" href="profil.html"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-surface-container-high" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjMTQ1MzJkIi8+PHRleHQgeD0iMzIiIHk9IjQyIiBmb250LXNpemU9IjMwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjNmNmOGJiIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtd2VpZ2h0PSI3MDAiPkE8L3RleHQ+PC9zdmc+"/></a></div></div></header><main class="flex-1 w-full bg-surface pt-16 pb-28"><div class="flex flex-col w-full pb-6">
+<!-- Active Tab Highlight Script for Bottom Bar -->
+<script>
+    (function() {
+      const navLinks = document.querySelectorAll('nav a[data-path]');
+      navLinks.forEach(link => {
+        const path = link.getAttribute('data-path');
+        const dot = link.querySelector('span:last-child');
+        if (path === 'formations') {
+          link.classList.add('text-primary-container', 'font-semibold');
+          link.classList.remove('text-on-surface-variant');
+          if (dot) dot.classList.remove('opacity-0');
+        } else {
+          link.classList.remove('text-primary-container', 'font-semibold');
+          link.classList.add('text-on-surface-variant');
+          if (dot) dot.classList.add('opacity-0');
+        }
+      });
+    })();
+  </script>
+<!-- 1. Header Section & Global Progress -->
+<section class="px-margin pt-4 pb-2">
+<div class="flex items-center gap-space-xs text-secondary mb-1">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Parcours certifié</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Formations vidéo</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Chaque niveau s'appuie sur le précédent. Avance à ton rythme.</p>
+<!-- Global Progress Card -->
+<div class="mt-4 bg-surface-container-lowest p-space-md rounded-2xl shadow-sm">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[18px]">school</span>
+</div>
+<div>
+<span class="font-label-md text-label-md text-primary font-semibold block">Progression générale</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">6 sur 65 leçons complétées</span>
+</div>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">10 %</span>
+</div>
+<!-- Track & Progress Bar -->
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 10%;"></div>
+</div>
+</div>
+</section>
+<!-- 2. Horizontal Filter Pills -->
+<section class="mt-4">
+<div class="flex items-center gap-space-xs overflow-x-auto px-margin no-scrollbar py-1">
+<button class="shrink-0 px-4 py-2 rounded-full font-label-md text-label-md bg-primary-container text-on-primary shadow-sm transition-all flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">apps</span>
+        Tous les niveaux
+      </button>
+<button class="shrink-0 px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface hover:bg-surface-container-high transition-colors flex items-center gap-1.5 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+        Niveau 1 · Débutant
+      </button>
+<button class="shrink-0 px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface hover:bg-surface-container-high transition-colors flex items-center gap-1.5 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-surface-tint"></span>
+        Niveau 2 · Intermédiaire
+      </button>
+<button class="shrink-0 px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface hover:bg-surface-container-high transition-colors flex items-center gap-1.5 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-on-tertiary-container"></span>
+        Niveau 3 · Avancé
+      </button>
+</div>
+</section>
+<!-- 3. Active Lesson Detailed Card (Video Player + Lesson Explorer) -->
+<section class="px-margin mt-5">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">En cours de visionnement</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Reprendre la session</span>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden">
+<!-- 16:9 Video Canvas -->
+<div class="relative w-full aspect-video bg-primary-container flex items-center justify-center overflow-hidden group">
+<!-- Thumbnail Placeholder Image -->
+<img class="absolute inset-0 w-full h-full object-cover opacity-60" data-alt="Modern clean educational motion graphic explaining personal budgeting for Canadian university students, featuring minimalist donut charts representing 50% needs, 30% wants, and 20% savings, navy blue and soft emerald color palette, studio lighting, high resolution interface capture" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMCA2Ij48cmVjdCB3aWR0aD0iMTAiIGhlaWdodD0iNiIgZmlsbD0iIzE0NTMyZCIvPjwvc3ZnPg=="/>
+<!-- Subtle Top Dark Gradient Overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container via-transparent to-primary/40 pointer-events-none"></div>
+<!-- Badges on player (Top row) -->
+<div class="absolute top-3 inset-x-3 flex items-center justify-between z-10">
+<div class="bg-primary/80 backdrop-blur-md px-2.5 py-1 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary-fixed">play_circle</span>
+<span class="font-label-sm text-label-sm text-on-primary">Leçon 3/10</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="bg-surface-container-lowest/20 backdrop-blur-md font-label-sm text-[10px] px-2 py-0.5 rounded text-on-primary font-semibold">1080p HD</span>
+<span class="bg-secondary text-on-secondary font-label-sm text-[10px] px-2 py-0.5 rounded-full font-semibold">En cours</span>
+</div>
+</div>
+<!-- Central Play Action Button -->
+<button aria-label="Lancer la vidéo" class="relative z-10 w-14 h-14 rounded-full bg-surface-container-lowest text-primary shadow-lg flex items-center justify-center transform active:scale-95 transition-transform hover:bg-surface-container-lowest/90">
+<span class="material-symbols-outlined text-[32px] translate-x-0.5" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+<!-- Bottom Playback Track Overlay -->
+<div class="absolute bottom-2.5 inset-x-3 z-10 flex flex-col gap-1">
+<div class="w-full h-1 bg-surface-container-lowest/30 rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 34%;"></div>
+</div>
+<div class="flex items-center justify-between text-on-primary font-label-sm text-[11px] px-0.5">
+<span>04:18</span>
+<span>12:45</span>
+</div>
+</div>
+</div>
+<!-- Lesson Metadata & Context -->
+<div class="p-space-md">
+<div class="flex items-center gap-2 mb-1.5">
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container-low px-2 py-0.5 rounded-full font-semibold">Niveau 1 · Fondations</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Budget étudiant</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary">La règle 50/30/20</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1.5 leading-relaxed">
+          Découvre comment répartir simplement tes revenus étudiants entre tes besoins essentiels (50 %), tes loisirs et imprévus (30 %), et ton épargne de sécurité (20 %).
+        </p>
+<!-- Lesson Navigation Controls -->
+<div class="mt-4 pt-4 bg-surface-container-low/60 -mx-space-md px-space-md pb-1 flex flex-col gap-2.5">
+<!-- Main Completion Action -->
+<button class="w-full h-12 bg-secondary text-on-secondary rounded-xl font-label-md text-label-md flex items-center justify-center gap-2 shadow-sm active:opacity-95 transition-all">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+            Marquer comme terminée
+          </button>
+<!-- Stepper Buttons (Prev / Next) -->
+<div class="grid grid-cols-2 gap-2">
+<button class="h-10 bg-surface-container-lowest text-primary rounded-xl font-label-md text-label-md flex items-center justify-center gap-1 shadow-sm active:bg-surface-container">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+              Précédente
+            </button>
+<button class="h-10 bg-surface-container-lowest text-primary rounded-xl font-label-md text-label-md flex items-center justify-center gap-1 shadow-sm active:bg-surface-container">
+              Suivante
+              <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Accordion Module Syllabus -->
+<div class="mt-4 pt-3">
+<details class="group cursor-pointer">
+<summary class="flex items-center justify-between list-none py-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">format_list_bulleted</span>
+<span class="font-title-md text-title-md text-primary">Sommaire du module (3/10)</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant transition-transform duration-200 group-open:rotate-180">expand_more</span>
+</summary>
+<div class="mt-3 flex flex-col gap-2">
+<!-- Item 1 Done -->
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-2.5">
+<div class="w-6 h-6 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-primary leading-tight">1. Introduction au budget universitaire</p>
+<span class="font-body-sm text-[11px] text-secondary font-medium">Terminée · 3 min</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">replay</span>
+</div>
+<!-- Item 2 Done -->
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-2.5">
+<div class="w-6 h-6 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-primary leading-tight">2. Identifier dépenses fixes vs variables</p>
+<span class="font-body-sm text-[11px] text-secondary font-medium">Terminée · 5 min</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">replay</span>
+</div>
+<!-- Item 3 Active -->
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-secondary-fixed/30">
+<div class="flex items-center gap-2.5">
+<div class="w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-primary font-semibold leading-tight">3. La règle 50/30/20</p>
+<span class="font-body-sm text-[11px] text-primary-container font-semibold">En cours · 12 min</span>
+</div>
+</div>
+<span class="font-label-sm text-[10px] bg-secondary text-on-secondary px-2 py-0.5 rounded-full font-bold">Actuel</span>
+</div>
+<!-- Item 4 Upcoming -->
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low/60 opacity-80">
+<div class="flex items-center gap-2.5">
+<div class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px]">lock</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-primary leading-tight">4. Créer son fonds d'urgence étudiant</p>
+<span class="font-body-sm text-[11px] text-on-surface-variant">À venir · 6 min</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">chevron_right</span>
+</div>
+</div>
+</details>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Curriculum Modules by Level -->
+<!-- NIVEAU 1: FONDATIONS FINANCIÈRES (Accent Vert / Émeraude) -->
+<section class="px-margin mt-7">
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<h3 class="font-headline-sm text-headline-sm text-primary tracking-tight">Niveau 1 · Fondations financières</h3>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container-low px-2 py-0.5 rounded-full font-semibold">2 modules</span>
+</div>
+<div class="flex flex-col gap-3">
+<!-- Card 1: Budget étudiant -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-start gap-3">
+<div class="w-12 h-12 rounded-xl bg-secondary-container flex items-center justify-center text-on-secondary-container shrink-0">
+<span class="material-symbols-outlined text-[26px]">calculate</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-primary">Budget étudiant</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">10 leçons · 38 min au total</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold bg-secondary-fixed/40 px-2 py-0.5 rounded-full">30 %</span>
+</div>
+<div class="mt-3.5 flex items-center justify-between text-body-sm text-on-surface-variant mb-1.5">
+<span>3 sur 10 leçons complétées</span>
+<span class="font-semibold text-primary">3 / 10</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 30%;"></div>
+</div>
+<div class="mt-3 flex items-center justify-between pt-2">
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-[11px]">
+<span class="material-symbols-outlined text-[15px] text-secondary">trending_up</span>
+            Améliore ta cote de confiance
+          </div>
+<button class="px-3.5 py-1.5 bg-primary-container text-on-primary rounded-xl font-label-md text-label-md flex items-center gap-1 shadow-sm active:scale-95 transition-all">
+<span>Continuer</span>
+<span class="material-symbols-outlined text-[16px]">play_arrow</span>
+</button>
+</div>
+</div>
+<!-- Card 2: Comprendre le crédit -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-start gap-3">
+<div class="w-12 h-12 rounded-xl bg-secondary-container flex items-center justify-center text-on-secondary-container shrink-0">
+<span class="material-symbols-outlined text-[26px]">credit_score</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-primary">Comprendre le crédit</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">10 leçons · 40 min au total</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold bg-secondary-fixed/40 px-2 py-0.5 rounded-full">30 %</span>
+</div>
+<div class="mt-3.5 flex items-center justify-between text-body-sm text-on-surface-variant mb-1.5">
+<span>3 sur 10 leçons complétées</span>
+<span class="font-semibold text-primary">3 / 10</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 30%;"></div>
+</div>
+<div class="mt-3 flex items-center justify-between pt-2">
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-[11px]">
+<span class="material-symbols-outlined text-[15px] text-secondary">check_circle</span>
+            Impact direct sur ton microprêt
+          </div>
+<button class="px-3.5 py-1.5 bg-primary-container text-on-primary rounded-xl font-label-md text-label-md flex items-center gap-1 shadow-sm active:scale-95 transition-all">
+<span>Continuer</span>
+<span class="material-symbols-outlined text-[16px]">play_arrow</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- NIVEAU 2: GESTION ACTIVE & FISCALITÉ (Accent Bleu / Marine) -->
+<section class="px-margin mt-7">
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-surface-tint"></span>
+<h3 class="font-headline-sm text-headline-sm text-primary tracking-tight">Niveau 2 · Gestion active &amp; fiscalité</h3>
+</div>
+<span class="font-label-sm text-label-sm text-surface-tint bg-surface-container-low px-2 py-0.5 rounded-full font-semibold">2 modules</span>
+</div>
+<div class="flex flex-col gap-3">
+<!-- Card 3: Épargner et investir -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-start gap-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary-container shrink-0">
+<span class="material-symbols-outlined text-[26px]">savings</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-primary">Épargner et investir</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">12 leçons · CELI, REER, CELIAPP</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium bg-surface-container px-2 py-0.5 rounded-full">Non débuté</span>
+</div>
+<div class="mt-3.5 flex items-center justify-between text-body-sm text-on-surface-variant mb-1.5">
+<span>0 sur 12 leçons complétées</span>
+<span class="font-semibold text-on-surface-variant">0 / 12</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-surface-tint rounded-full" style="width: 0%;"></div>
+</div>
+<div class="mt-3 flex items-center justify-between pt-2">
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-[11px]">
+<span class="material-symbols-outlined text-[15px] text-surface-tint">schedule</span>
+            45 min de contenu
+          </div>
+<button class="px-4 py-1.5 bg-surface-container-high hover:bg-surface-container-highest text-primary-container rounded-xl font-label-md text-label-md flex items-center gap-1 transition-all active:scale-95">
+<span>Commencer</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Card 4: Impôts de l'étudiant -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-start gap-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary-container shrink-0">
+<span class="material-symbols-outlined text-[26px]">receipt_long</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-primary">Impôts de l'étudiant</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">9 leçons · Crédits Revenu Québec &amp; ARC</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium bg-surface-container px-2 py-0.5 rounded-full">Non débuté</span>
+</div>
+<div class="mt-3.5 flex items-center justify-between text-body-sm text-on-surface-variant mb-1.5">
+<span>0 sur 9 leçons complétées</span>
+<span class="font-semibold text-on-surface-variant">0 / 9</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-surface-tint rounded-full" style="width: 0%;"></div>
+</div>
+<div class="mt-3 flex items-center justify-between pt-2">
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-[11px]">
+<span class="material-symbols-outlined text-[15px] text-surface-tint">monetization_on</span>
+            Optimise tes remboursements
+          </div>
+<button class="px-4 py-1.5 bg-surface-container-high hover:bg-surface-container-highest text-primary-container rounded-xl font-label-md text-label-md flex items-center gap-1 transition-all active:scale-95">
+<span>Commencer</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- NIVEAU 3: STRATÉGIES AVANCÉES (Accent Ambré / Verrouillé) -->
+<section class="px-margin mt-7">
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-on-tertiary-container"></span>
+<h3 class="font-headline-sm text-headline-sm text-primary tracking-tight">Niveau 3 · Stratégies avancées</h3>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-[11px]">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+        À débloquer
+      </div>
+</div>
+<div class="flex flex-col gap-3">
+<!-- Card 5: Évaluer un investissement -->
+<div class="bg-surface-container-lowest/80 rounded-2xl p-space-md shadow-sm relative overflow-hidden">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-start gap-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-on-surface-variant shrink-0">
+<span class="material-symbols-outlined text-[26px]">query_stats</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<h4 class="font-title-md text-title-md text-primary">Évaluer un investissement</h4>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">lock</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">12 leçons · Analyse fondamentale &amp; FNB</p>
+</div>
+</div>
+</div>
+<div class="mt-3.5 p-2.5 rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-on-tertiary-container">info</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Complète le Niveau 2 pour débloquer</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Verrouillé</span>
+</div>
+</div>
+<!-- Card 6: Couverture et produits dérivés -->
+<div class="bg-surface-container-lowest/80 rounded-2xl p-space-md shadow-sm relative overflow-hidden">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-start gap-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-on-surface-variant shrink-0">
+<span class="material-symbols-outlined text-[26px]">shield</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<h4 class="font-title-md text-title-md text-primary">Couverture &amp; gestion du risque</h4>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">lock</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">12 leçons · Prémunir son portefeuille</p>
+</div>
+</div>
+</div>
+<div class="mt-3.5 p-2.5 rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-on-tertiary-container">info</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Prérequis : Niveau 1 &amp; 2 terminés</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Verrouillé</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Educational Trust & Reassurance Banner -->
+<section class="px-margin mt-8 mb-4">
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex items-start gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">workspace_premium</span>
+</div>
+<div>
+<h5 class="font-label-md text-label-md text-primary font-semibold">100 % gratuit et sans prérequis</h5>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-normal">
+          Formations conçues avec des conseillers financiers québécois certifiés pour les membres MicroCampus. Zéro frais d'inscription, aucun prérequis mathématique.
+        </p>
+<div class="flex items-center gap-3 mt-3 pt-2">
+<span class="font-label-sm text-[11px] text-secondary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">done_all</span> Conforme AMF
+          </span>
+<span class="font-label-sm text-[11px] text-on-surface-variant font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">school</span> Attestation finale
+          </span>
+</div>
+</div>
+</div>
+</section>
+</div></main><nav class="fixed bottom-0 inset-x-0 z-50 bg-surface-container-lowest/95 backdrop-blur-xl pb-safe shadow-[0_-4px_20px_rgba(0,0,0,0.06)]" data-active-classes="text-primary-container font-semibold"><div class="flex justify-around items-center h-16 px-gutter-sm"><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant transition-colors group" data-path="accueil" href="index.html"><span class="material-symbols-outlined text-[24px]">account_balance</span><span class="font-label-sm text-[10px] leading-tight mt-1">Accueil</span><span class="w-1 h-1 rounded-full bg-secondary opacity-0 group-[.text-primary-container]:opacity-100 transition-opacity mt-0.5"></span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant transition-colors group" data-path="microprets" href="simuler.html"><span class="material-symbols-outlined text-[24px]">credit_card</span><span class="font-label-sm text-[10px] leading-tight mt-1">Microprêts</span><span class="w-1 h-1 rounded-full bg-secondary opacity-0 group-[.text-primary-container]:opacity-100 transition-opacity mt-0.5"></span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant transition-colors group" data-path="formations" href="formations.html"><span class="material-symbols-outlined text-[24px]">school</span><span class="font-label-sm text-[10px] leading-tight mt-1">Formations</span><span class="w-1 h-1 rounded-full bg-secondary opacity-0 group-[.text-primary-container]:opacity-100 transition-opacity mt-0.5"></span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant transition-colors group" data-path="finances" href="finances.html"><span class="material-symbols-outlined text-[24px]">account_balance_wallet</span><span class="font-label-sm text-[10px] leading-tight mt-1">Finances</span><span class="w-1 h-1 rounded-full bg-secondary opacity-0 group-[.text-primary-container]:opacity-100 transition-opacity mt-0.5"></span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant transition-colors group" data-path="profil" href="profil.html"><span class="material-symbols-outlined text-[24px]">person</span><span class="font-label-sm text-[10px] leading-tight mt-1">Profil</span><span class="w-1 h-1 rounded-full bg-secondary opacity-0 group-[.text-primary-container]:opacity-100 transition-opacity mt-0.5"></span></a></div></nav><script src="app.js"></script><script src="actions.js"></script></body></html>

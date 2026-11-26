@@ -1,0 +1,18 @@
+{
+  "name": "MicroCampus",
+  "short_name": "MicroCampus",
+  "id": "/microCampus/index.html",
+  "start_url": "/microCampus/index.html",
+  "scope": "/microCampus/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#166534",
+  "description": "Micro-pr\u00eats \u00e9tudiants \u00e0 0 % d'int\u00e9r\u00eat \u2014 Universit\u00e9 de Sherbrooke.",
+  "icons": [
+    {
+      "src": "/microCampus/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

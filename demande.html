@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>MicroCampus</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-tint": "#166534", "on-primary": "#ffffff", "tertiary-fixed": "#ffddb8", "tertiary-fixed-dim": "#ffb95f", "surface-bright": "#fafafa", "on-secondary": "#ffffff", "on-secondary-fixed": "#002113", "error-container": "#ffdad6", "tertiary-container": "#361f00", "on-error-container": "#93000a", "on-surface": "#111111", "error": "#ba1a1a", "secondary-fixed": "#6ffbbe", "background": "#fafafa", "on-secondary-fixed-variant": "#005236", "secondary-fixed-dim": "#4edea3", "on-tertiary-fixed": "#2a1700", "on-tertiary-container": "#c27c00", "surface-container-low": "#f5f5f5", "inverse-primary": "#86efac", "surface-dim": "#cccccc", "on-background": "#111111", "inverse-surface": "#111111", "primary-container": "#14532d", "surface-container-highest": "#d4d4d4", "primary": "#166534", "surface-container-high": "#e5e5e5", "on-primary-fixed": "#052e16", "surface": "#fafafa", "secondary": "#006c49", "on-primary-container": "#14532d", "on-secondary-container": "#00714d", "surface-container": "#eeeeee", "surface-container-lowest": "#ffffff", "on-tertiary": "#ffffff", "on-surface-variant": "#43474d", "secondary-container": "#6cf8bb", "outline": "#74777e", "outline-variant": "#c4c6ce", "on-tertiary-fixed-variant": "#653e00", "surface-variant": "#e5e5e5", "on-primary-fixed-variant": "#14532d", "primary-fixed-dim": "#86efac", "tertiary": "#190c00", "on-error": "#ffffff", "inverse-on-surface": "#f5f5f5", "primary-fixed": "#bbf7d0" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-sm": "0.75rem", "gutter": "1rem", "gutter-sm": "0.75rem", "space-2xl": "2.5rem", "space-xs": "0.5rem", "margin-compact": "1rem", "space-md": "1rem", "space-lg": "1.5rem", "space-2xs": "0.25rem", "space-xl": "2rem", "margin": "1.25rem" }, fontFamily: { "body-lg": ["Inter"], "amount-display": ["Inter"], "label-sm": ["Inter"], "body-md": ["Inter"], "body-sm": ["Inter"], "amount-card": ["Inter"], "headline-sm": ["Inter"], "headline-md": ["Inter"], "display-lg": ["Inter"], "headline-lg": ["Inter"], "title-md": ["Inter"], "label-md": ["Inter"] }, fontSize: { "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }], "amount-display": ["32px", { lineHeight: "38px", letterSpacing: "-0.03em", fontWeight: "700" }], "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.04em", fontWeight: "600" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }], "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }], "amount-card": ["24px", { lineHeight: "30px", letterSpacing: "-0.02em", fontWeight: "700" }], "headline-sm": ["18px", { lineHeight: "24px", letterSpacing: "-0.01em", fontWeight: "600" }], "headline-md": ["22px", { lineHeight: "28px", letterSpacing: "-0.015em", fontWeight: "600" }], "display-lg": ["36px", { lineHeight: "44px", letterSpacing: "-0.03em", fontWeight: "700" }], "headline-lg": ["28px", { lineHeight: "34px", letterSpacing: "-0.02em", fontWeight: "700" }], "title-md": ["16px", { lineHeight: "22px", letterSpacing: "-0.005em", fontWeight: "600" }], "label-md": ["13px", { lineHeight: "18px", letterSpacing: "0.01em", fontWeight: "500" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;background-color:#fafafa;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,20px);}.pt-safe{padding-top:env(safe-area-inset-top,44px);}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  <script>try{var t=localStorage.getItem('mc-theme');if(t=='dark'||(!t&&matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.classList.add('dark')}catch(e){}</script><link rel="icon" href="logo.png"><link rel="apple-touch-icon" href="logo.png"><link rel="manifest" href="manifest.json"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="MicroCampus"><meta name="apple-mobile-web-app-status-bar-style" content="default"><style>
+html.dark{color-scheme:dark}
+html.dark .bg-surface,html.dark body{background:#000000!important}
+html.dark .bg-surface\/85{background:rgba(0,0,0,.88)!important}
+html.dark .bg-surface-container-low,html.dark .bg-surface-container-low\/60{background:#111111!important}
+html.dark .bg-surface-container,html.dark .hover\:bg-surface-container:hover{background:#171717!important}
+html.dark .bg-surface-container-high,html.dark .hover\:bg-surface-container-high:hover{background:#1f1f1f!important}
+html.dark .bg-surface-container-highest{background:#262626!important}
+html.dark .bg-surface-container-lowest,html.dark .bg-surface-container-lowest\/95,html.dark .bg-surface-container-lowest\/80{background:#0a0a0a!important}
+html.dark .bg-surface-variant{background:#1f1f1f!important}
+html.dark .bg-primary{background:#16a34a!important}
+html.dark .bg-primary\/60{background:rgba(0,0,0,.6)!important}
+html.dark .bg-primary-container{background:#14532d!important}
+html.dark .bg-primary-fixed,html.dark .bg-primary-fixed-dim{background:#14532d!important}
+html.dark .bg-surface-tint\/20{background:rgba(34,197,94,.2)!important}
+html.dark .ring-surface-container-high{--tw-ring-color:#404040!important}
+html.dark .text-primary,html.dark .text-on-surface{color:#ffffff!important}
+html.dark .text-primary-container,html.dark .text-on-primary-container{color:#bbf7d0!important}
+html.dark .text-on-primary-fixed,html.dark .text-on-primary-fixed-variant{color:#bbf7d0!important}
+html.dark .text-on-surface-variant{color:#a3a3a3!important}
+html.dark .text-secondary{color:#4ade80!important}
+html.dark .border-outline-variant,html.dark [class*="border-surface-container"]{border-color:#262626!important}
+html.dark input,html.dark select,html.dark textarea{color:#ffffff;background:#111111}
+html.dark .bg-primary-container .text-primary-container,html.dark .bg-primary-container.text-on-primary{color:#fff!important}
+html.dark header{box-shadow:0 1px 8px rgba(0,0,0,.6)!important}
+html.dark .bg-secondary-fixed\/30.text-on-secondary-fixed-variant,html.dark .bg-secondary-fixed\/40.text-on-secondary-fixed-variant,html.dark .bg-secondary-container\/40.text-on-secondary-fixed-variant,html.dark .bg-secondary-fixed\/50.text-on-secondary-fixed,html.dark .bg-secondary-fixed\/60.text-on-secondary-fixed,html.dark .bg-secondary-container\/40.text-on-secondary-container{background:rgba(22,163,74,.32)!important;color:#bbf7d0!important}
+html.dark .bg-secondary-fixed\/30.text-on-secondary-fixed-variant .bg-secondary,html.dark .bg-secondary-fixed\/40.text-on-secondary-fixed-variant .bg-secondary,html.dark .bg-secondary-fixed\/50.text-on-secondary-fixed .bg-secondary,html.dark .bg-secondary-fixed\/60.text-on-secondary-fixed .bg-secondary,html.dark .bg-secondary-container\/40.text-on-secondary-container .bg-secondary{background:#ffffff!important}
+.bg-primary\/60{background:rgba(0,0,0,.6)!important}
+</style></head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen" data-page="demande"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.05)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-xs"><img alt="MicroCampus Logo" class="h-8 w-auto object-contain" src="logo.png"/><span class="font-headline-sm text-headline-sm text-primary-container tracking-tight">MicroCampus</span></div><div class="flex items-center gap-space-xs"><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span></button><a class="w-11 h-11 flex items-center justify-center" data-path="profil" href="profil.html"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-surface-container-high" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjMTQ1MzJkIi8+PHRleHQgeD0iMzIiIHk9IjQyIiBmb250LXNpemU9IjMwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjNmNmOGJiIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtd2VpZ2h0PSI3MDAiPkE8L3RleHQ+PC9zdmc+"/></a></div></div></header><main class="flex-1 w-full bg-surface pt-16 pb-28"><div class="flex flex-col w-full relative">
+<!-- Top Application Sub-Header -->
+<div class="px-margin pt-space-xs pb-space-sm flex items-center justify-between">
+<button aria-label="Retour" class="w-10 h-10 -ml-2 rounded-full flex items-center justify-center text-primary-container hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[24px]">arrow_back</span>
+</button>
+<h1 class="font-headline-sm text-headline-sm text-primary-container tracking-tight">Faire une demande</h1>
+<a class="w-10 h-10 -mr-2 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="#" title="Aide et contact">
+<span class="material-symbols-outlined text-[22px]">help_outline</span>
+</a>
+</div>
+<!-- Stepper Indicator -->
+<div class="px-margin pb-space-md">
+<div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-sm">
+<div class="flex items-center justify-between relative">
+<!-- Connecting Track -->
+<div class="absolute left-6 right-6 top-4 -translate-y-1/2 h-1 bg-surface-container-high rounded-full -z-0">
+<div class="h-full w-1/2 bg-secondary rounded-full transition-all"></div>
+</div>
+<!-- Step 1 -->
+<div class="flex flex-col items-center gap-1 z-10">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[18px] font-bold">check</span>
+</div>
+<span class="font-label-sm text-[11px] text-on-surface-variant font-medium">1. Simulation</span>
+</div>
+<!-- Step 2 (Active) -->
+<div class="flex flex-col items-center gap-1 z-10">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-md">
+<span class="font-label-sm text-[12px] font-bold">2</span>
+</div>
+<span class="font-label-sm text-[11px] text-primary-container font-bold">2. Demande</span>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col items-center gap-1 z-10">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-outline flex items-center justify-center">
+<span class="font-label-sm text-[12px] font-medium">3</span>
+</div>
+<span class="font-label-sm text-[11px] text-outline font-medium">3. Réponse</span>
+</div>
+</div>
+</div>
+</div>
+<div class="px-margin flex flex-col gap-space-md pb-space-2xl">
+<!-- Loan Summary Recap Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm relative overflow-hidden">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-9 h-9 rounded-lg bg-surface-container-lowest text-primary-container flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[20px]">payments</span>
+</div>
+<div>
+<span class="font-label-sm text-[11px] text-on-surface-variant block uppercase tracking-wider">Simulation confirmée</span>
+<div class="font-amount-card text-amount-card text-primary-container">400,00 $ <span class="font-body-sm text-body-sm text-on-surface-variant font-normal">/ 6 semaines</span></div>
+</div>
+</div>
+<button class="flex items-center gap-1 text-primary-container font-label-md text-label-md py-1 px-2.5 rounded-lg bg-surface-container-highest hover:bg-surface-variant transition-colors" title="Modifier le montant" type="button">
+<span>Modifier</span>
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+</div>
+<div class="mt-space-sm pt-space-xs bg-surface-container-lowest/80 rounded-lg p-2.5 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">account_balance</span>
+<div class="min-w-0 flex-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Versement direct dans :</span>
+<span class="font-title-md text-[13px] text-primary-container truncate font-semibold block">Compte chèques étudiant (Desjardins •••• 4821)</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-[18px]">verified_user</span>
+</div>
+</div>
+<!-- Eligibility Callout -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex items-start gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-secondary-container/40 text-on-secondary-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">
+<strong class="font-semibold text-primary-container">Critère d'accès :</strong> Réservé aux étudiants majeurs résidant au Québec et inscrits activement dans un établissement postsecondaire reconnu.
+      </p>
+</div>
+<!-- Main Loan Application Form -->
+<form class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex flex-col gap-space-md" id="loan-application-form" onsubmit="event.preventDefault(); openSuccessSheet();">
+<div class="flex items-center justify-between pb-1">
+<h2 class="font-title-md text-title-md text-primary-container">Détails de l'étudiant(e)</h2>
+<span class="font-label-sm text-[11px] text-on-surface-variant font-medium">Session Automne 2024</span>
+</div>
+<!-- Field 1: Full Name -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-primary-container font-semibold" for="full_name">Nom complet</label>
+<div class="relative flex items-center">
+<input class="w-full bg-surface-container-low text-primary-container font-body-md text-body-md rounded-xl px-3.5 py-3 pl-11 focus:outline-none focus:bg-surface-container-lowest focus:shadow-md transition-all placeholder:text-outline-variant" id="full_name" name="full_name" placeholder="Prénom et nom de famille" required="" type="text" value="Alex Tremblay"/>
+<span class="material-symbols-outlined text-on-surface-variant absolute left-3.5 text-[20px] pointer-events-none">person</span>
+</div>
+</div>
+<!-- Field 2: University Email -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-primary-container font-semibold" for="edu_email">Courriel institutionnel</label>
+<span class="font-body-sm text-[11px] text-secondary font-medium flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Vérifié (.ca)
+          </span>
+</div>
+<div class="relative flex items-center">
+<input class="w-full bg-surface-container-low text-primary-container font-body-md text-body-md rounded-xl px-3.5 py-3 pl-11 focus:outline-none focus:bg-surface-container-lowest focus:shadow-md transition-all placeholder:text-outline-variant" id="edu_email" name="edu_email" placeholder="prenom.nom@etudiant.ca" required="" type="email" value="alex.tremblay@usherbrooke.ca"/>
+<span class="material-symbols-outlined text-on-surface-variant absolute left-3.5 text-[20px] pointer-events-none">mail</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant">L'adresse doit se terminer par le domaine universitaire officiel (.ca ou .qc.ca).</span>
+</div>
+<!-- Field 3: University with Pill Selector -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-primary-container font-semibold" for="university">Établissement d'études</label>
+<div class="relative flex items-center">
+<input class="w-full bg-surface-container-low text-primary-container font-body-md text-body-md rounded-xl px-3.5 py-3 pl-11 focus:outline-none focus:bg-surface-container-lowest focus:shadow-md transition-all" id="university" name="university" placeholder="Nom de votre université" required="" type="text" value="Université de Sherbrooke"/>
+<span class="material-symbols-outlined text-on-surface-variant absolute left-3.5 text-[20px] pointer-events-none">school</span>
+</div>
+<!-- Suggestion Pills -->
+<div class="flex flex-wrap gap-1.5 pt-1">
+<button class="uni-pill px-3 py-1 rounded-full text-xs font-medium bg-primary-container text-on-primary transition-all shadow-sm" onclick="selectUniversity('Université de Sherbrooke', this)" type="button">UdeS</button>
+<button class="uni-pill px-3 py-1 rounded-full text-xs font-medium bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all" onclick="selectUniversity('Université Laval', this)" type="button">Laval</button>
+<button class="uni-pill px-3 py-1 rounded-full text-xs font-medium bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all" onclick="selectUniversity('Université McGill', this)" type="button">McGill</button>
+<button class="uni-pill px-3 py-1 rounded-full text-xs font-medium bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all" onclick="selectUniversity('UQAM', this)" type="button">UQAM</button>
+<button class="uni-pill px-3 py-1 rounded-full text-xs font-medium bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all" onclick="selectUniversity('Concordia', this)" type="button">Concordia</button>
+</div>
+</div>
+<!-- Field 4: Primary Need / Reason -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-primary-container font-semibold" for="loan_purpose">Besoin principal couvert</label>
+<div class="relative flex items-center">
+<select class="w-full bg-surface-container-low text-primary-container font-body-md text-body-md rounded-xl px-3.5 py-3 pl-11 pr-10 focus:outline-none focus:bg-surface-container-lowest focus:shadow-md appearance-none transition-all" id="loan_purpose" name="loan_purpose">
+<option selected="" value="materiel">Matériel scolaire &amp; manuels didactiques</option>
+<option value="loyer">Loyer et colocation étudiante</option>
+<option value="alimentation">Épicerie &amp; alimentation</option>
+<option value="transport">Transport (Titre OPUS, covoiturage)</option>
+<option value="autre">Dépense imprévue d'urgence</option>
+</select>
+<span class="material-symbols-outlined text-on-surface-variant absolute left-3.5 text-[20px] pointer-events-none">category</span>
+<span class="material-symbols-outlined text-on-surface-variant absolute right-3 text-[20px] pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Field 5: Mobile Phone -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-primary-container font-semibold" for="phone_number">Téléphone mobile (SMS)</label>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Validation 2FA</span>
+</div>
+<div class="relative flex items-center">
+<input class="w-full bg-surface-container-low text-primary-container font-body-md text-body-md rounded-xl px-3.5 py-3 pl-11 focus:outline-none focus:bg-surface-container-lowest focus:shadow-md transition-all placeholder:text-outline-variant" id="phone_number" name="phone_number" placeholder="514 000-0000" required="" type="tel" value="514 555-0198"/>
+<span class="material-symbols-outlined text-on-surface-variant absolute left-3.5 text-[20px] pointer-events-none">smartphone</span>
+</div>
+</div>
+<!-- Eligibility Checkboxes -->
+<div class="pt-space-xs flex flex-col gap-2.5">
+<label class="flex items-start gap-3 cursor-pointer group">
+<div class="relative flex items-center mt-0.5">
+<input checked="" class="peer sr-only" id="check_age" required="" type="checkbox"/>
+<div class="w-5 h-5 rounded-md bg-surface-container-high peer-checked:bg-secondary flex items-center justify-center text-on-secondary transition-all">
+<span class="material-symbols-outlined text-[16px] font-bold">check</span>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface leading-tight select-none">
+            J'ai 18 ans ou plus et j'atteste de l'exactitude de mes renseignements civils.
+          </span>
+</label>
+<label class="flex items-start gap-3 cursor-pointer group">
+<div class="relative flex items-center mt-0.5">
+<input checked="" class="peer sr-only" id="check_enrolled" required="" type="checkbox"/>
+<div class="w-5 h-5 rounded-md bg-surface-container-high peer-checked:bg-secondary flex items-center justify-center text-on-secondary transition-all">
+<span class="material-symbols-outlined text-[16px] font-bold">check</span>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface leading-tight select-none">
+            Je confirme être présentement inscrit(e) à des cours universitaires cette session.
+          </span>
+</label>
+</div>
+<!-- Action Button CTA -->
+<div class="pt-space-sm flex flex-col gap-2.5">
+<button class="w-full h-12 bg-primary-container text-on-primary font-title-md text-title-md rounded-xl flex items-center justify-center gap-2 shadow-md hover:bg-primary transition-all active:scale-[0.99]" type="submit">
+<span class="material-symbols-outlined text-[20px]">lock</span>
+<span>Envoyer la demande</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+<div class="flex items-center justify-center gap-1.5 text-center text-on-surface-variant font-label-sm text-[11px]">
+<span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+<span>Chiffrement bancaire 256-bit · Décision en moins de 15 minutes</span>
+</div>
+</div>
+</form>
+<!-- Contextual Info Card: Student Friendly Terms -->
+<div class="bg-surface-container rounded-xl p-space-md flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest text-primary-container flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[22px]">calendar_today</span>
+</div>
+<div>
+<h3 class="font-title-md text-[14px] text-primary-container font-semibold">Calendrier de remboursement sans pénalité</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+          Premier prélèvement automatique de 66,67 $ dans 14 jours via Accord D / virement Interac. Aucune surprise, 0 frais cachés.
+        </p>
+</div>
+</div>
+</div>
+<!-- Bottom Sheet / Confirmation Modal Overlay -->
+<div class="fixed inset-0 z-50 bg-primary/60 backdrop-blur-sm transition-opacity duration-300 opacity-0 pointer-events-none flex items-end justify-center" id="confirmation-modal">
+<div class="w-full max-w-md bg-surface-container-lowest rounded-t-3xl p-space-lg shadow-2xl transition-transform duration-300 translate-y-full pb-safe flex flex-col items-center text-center" id="confirmation-content">
+<!-- Drag handle -->
+<div class="w-12 h-1.5 bg-surface-container-high rounded-full mb-space-md"></div>
+<!-- Icon Celebration Badge -->
+<div class="relative w-16 h-16 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center mb-space-sm shadow-md">
+<span class="material-symbols-outlined text-[36px]" style="font-variation-settings: 'FILL' 1;">task_alt</span>
+<span class="absolute -top-1 -right-1 flex h-4 w-4">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-4 w-4 bg-secondary"></span>
+</span>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-sm text-[11px] mb-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>En cours d'évaluation · Réf. #MC-84920</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary-container mt-1">Demande reçue — Merci !</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-xs leading-relaxed">
+        Ta demande de <strong class="text-primary-container font-semibold">400,00 $</strong> a bien été enregistrée. Elle sera étudiée et la confirmation officielle te sera transmise par courriel d'ici <strong class="text-primary-container font-semibold">15 minutes</strong>.
+      </p>
+<!-- Micro Metrics Pill -->
+<div class="w-full bg-surface-container-low rounded-xl p-space-sm my-space-md flex justify-between text-left">
+<div>
+<span class="font-label-sm text-[10px] text-on-surface-variant block uppercase">Compte de dépôt</span>
+<span class="font-title-md text-[13px] text-primary-container font-medium">Desjardins (•••• 4821)</span>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-[10px] text-on-surface-variant block uppercase">Délai estimé</span>
+<span class="font-title-md text-[13px] text-secondary font-semibold">Aujourd'hui, 14 h 30</span>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="w-full flex flex-col gap-2 mt-1">
+<button class="w-full h-12 bg-primary-container text-on-primary font-title-md text-title-md rounded-xl flex items-center justify-center gap-2 shadow-sm hover:bg-primary transition-all" onclick="closeSuccessSheet()" type="button">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+<span>Suivre ma demande</span>
+</button>
+<button class="w-full h-11 bg-transparent text-primary-container font-title-md text-[14px] rounded-xl flex items-center justify-center hover:bg-surface-container transition-all" onclick="closeSuccessSheet()" type="button">
+<span>Retour à l'accueil</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+    function selectUniversity(name, el) {
+      const input = document.getElementById('university');
+      if (input) {
+        input.value = name;
+      }
+      document.querySelectorAll('.uni-pill').forEach(pill => {
+        pill.classList.remove('bg-primary-container', 'text-on-primary', 'shadow-sm');
+        pill.classList.add('bg-surface-container', 'text-on-surface-variant');
+      });
+      el.classList.remove('bg-surface-container', 'text-on-surface-variant');
+      el.classList.add('bg-primary-container', 'text-on-primary', 'shadow-sm');
+    }
+
+    function openSuccessSheet() {
+      const modal = document.getElementById('confirmation-modal');
+      const content = document.getElementById('confirmation-content');
+      if (modal && content) {
+        modal.classList.remove('opacity-0', 'pointer-events-none');
+        modal.classList.add('opacity-100');
+        content.classList.remove('translate-y-full');
+        content.classList.add('translate-y-0');
+      }
+    }
+
+    function closeSuccessSheet() {
+      const modal = document.getElementById('confirmation-modal');
+      const content = document.getElementById('confirmation-content');
+      if (modal && content) {
+        modal.classList.remove('opacity-100');
+        modal.classList.add('opacity-0', 'pointer-events-none');
+        content.classList.remove('translate-y-0');
+        content.classList.add('translate-y-full');
+      }
+    }
+
+    // Set microprêts tab as active in bottom nav
+    (function highlightNavTab() {
+      const links = document.querySelectorAll('nav a');
+      links.forEach(link => {
+        if (link.getAttribute('data-path') === 'microprets') {
+          link.classList.remove('text-on-surface-variant');
+          link.classList.add('text-primary-container', 'font-semibold');
+          const indicator = link.querySelector('span:last-child');
+          if (indicator) indicator.classList.remove('opacity-0');
+        } else {
+          link.classList.remove('text-primary-container', 'font-semibold');
+          link.classList.add('text-on-surface-variant');
+        }
+      });
+    })();
+  </script>
+</div></main><nav class="fixed bottom-0 inset-x-0 z-50 bg-surface-container-lowest/95 backdrop-blur-xl pb-safe shadow-[0_-4px_20px_rgba(0,0,0,0.06)]" data-active-classes="text-primary-container font-semibold"><div class="flex justify-around items-center h-16 px-gutter-sm"><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant transition-colors group" data-path="accueil" href="index.html"><span class="material-symbols-outlined text-[24px]">account_balance</span><span class="font-label-sm text-[10px] leading-tight mt-1">Accueil</span><span class="w-1 h-1 rounded-full bg-secondary opacity-0 group-[.text-primary-container]:opacity-100 transition-opacity mt-0.5"></span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant transition-colors group" data-path="microprets" href="simuler.html"><span class="material-symbols-outlined text-[24px]">credit_card</span><span class="font-label-sm text-[10px] leading-tight mt-1">Microprêts</span><span class="w-1 h-1 rounded-full bg-secondary opacity-0 group-[.text-primary-container]:opacity-100 transition-opacity mt-0.5"></span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant transition-colors group" data-path="formations" href="formations.html"><span class="material-symbols-outlined text-[24px]">school</span><span class="font-label-sm text-[10px] leading-tight mt-1">Formations</span><span class="w-1 h-1 rounded-full bg-secondary opacity-0 group-[.text-primary-container]:opacity-100 transition-opacity mt-0.5"></span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant transition-colors group" data-path="finances" href="finances.html"><span class="material-symbols-outlined text-[24px]">account_balance_wallet</span><span class="font-label-sm text-[10px] leading-tight mt-1">Finances</span><span class="w-1 h-1 rounded-full bg-secondary opacity-0 group-[.text-primary-container]:opacity-100 transition-opacity mt-0.5"></span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant transition-colors group" data-path="profil" href="profil.html"><span class="material-symbols-outlined text-[24px]">person</span><span class="font-label-sm text-[10px] leading-tight mt-1">Profil</span><span class="w-1 h-1 rounded-full bg-secondary opacity-0 group-[.text-primary-container]:opacity-100 transition-opacity mt-0.5"></span></a></div></nav><script src="app.js"></script><script src="actions.js"></script></body></html>

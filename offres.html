@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>MicroCampus</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-tint": "#166534", "on-primary": "#ffffff", "tertiary-fixed": "#ffddb8", "tertiary-fixed-dim": "#ffb95f", "surface-bright": "#fafafa", "on-secondary": "#ffffff", "on-secondary-fixed": "#002113", "error-container": "#ffdad6", "tertiary-container": "#361f00", "on-error-container": "#93000a", "on-surface": "#111111", "error": "#ba1a1a", "secondary-fixed": "#6ffbbe", "background": "#fafafa", "on-secondary-fixed-variant": "#005236", "secondary-fixed-dim": "#4edea3", "on-tertiary-fixed": "#2a1700", "on-tertiary-container": "#c27c00", "surface-container-low": "#f5f5f5", "inverse-primary": "#86efac", "surface-dim": "#cccccc", "on-background": "#111111", "inverse-surface": "#111111", "primary-container": "#14532d", "surface-container-highest": "#d4d4d4", "primary": "#166534", "surface-container-high": "#e5e5e5", "on-primary-fixed": "#052e16", "surface": "#fafafa", "secondary": "#006c49", "on-primary-container": "#14532d", "on-secondary-container": "#00714d", "surface-container": "#eeeeee", "surface-container-lowest": "#ffffff", "on-tertiary": "#ffffff", "on-surface-variant": "#43474d", "secondary-container": "#6cf8bb", "outline": "#74777e", "outline-variant": "#c4c6ce", "on-tertiary-fixed-variant": "#653e00", "surface-variant": "#e5e5e5", "on-primary-fixed-variant": "#14532d", "primary-fixed-dim": "#86efac", "tertiary": "#190c00", "on-error": "#ffffff", "inverse-on-surface": "#f5f5f5", "primary-fixed": "#bbf7d0" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-sm": "0.75rem", "gutter": "1rem", "gutter-sm": "0.75rem", "space-2xl": "2.5rem", "space-xs": "0.5rem", "margin-compact": "1rem", "space-md": "1rem", "space-lg": "1.5rem", "space-2xs": "0.25rem", "space-xl": "2rem", "margin": "1.25rem" }, fontFamily: { "body-lg": ["Inter"], "amount-display": ["Inter"], "label-sm": ["Inter"], "body-md": ["Inter"], "body-sm": ["Inter"], "amount-card": ["Inter"], "headline-sm": ["Inter"], "headline-md": ["Inter"], "display-lg": ["Inter"], "headline-lg": ["Inter"], "title-md": ["Inter"], "label-md": ["Inter"] }, fontSize: { "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }], "amount-display": ["32px", { lineHeight: "38px", letterSpacing: "-0.03em", fontWeight: "700" }], "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.04em", fontWeight: "600" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }], "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }], "amount-card": ["24px", { lineHeight: "30px", letterSpacing: "-0.02em", fontWeight: "700" }], "headline-sm": ["18px", { lineHeight: "24px", letterSpacing: "-0.01em", fontWeight: "600" }], "headline-md": ["22px", { lineHeight: "28px", letterSpacing: "-0.015em", fontWeight: "600" }], "display-lg": ["36px", { lineHeight: "44px", letterSpacing: "-0.03em", fontWeight: "700" }], "headline-lg": ["28px", { lineHeight: "34px", letterSpacing: "-0.02em", fontWeight: "700" }], "title-md": ["16px", { lineHeight: "22px", letterSpacing: "-0.005em", fontWeight: "600" }], "label-md": ["13px", { lineHeight: "18px", letterSpacing: "0.01em", fontWeight: "500" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;background-color:#fafafa;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,20px);}.pt-safe{padding-top:env(safe-area-inset-top,44px);}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  <script>try{var t=localStorage.getItem('mc-theme');if(t=='dark'||(!t&&matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.classList.add('dark')}catch(e){}</script><link rel="icon" href="logo.png"><link rel="apple-touch-icon" href="logo.png"><link rel="manifest" href="manifest.json"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="MicroCampus"><meta name="apple-mobile-web-app-status-bar-style" content="default"><style>
+html.dark{color-scheme:dark}
+html.dark .bg-surface,html.dark body{background:#000000!important}
+html.dark .bg-surface\/85{background:rgba(0,0,0,.88)!important}
+html.dark .bg-surface-container-low,html.dark .bg-surface-container-low\/60{background:#111111!important}
+html.dark .bg-surface-container,html.dark .hover\:bg-surface-container:hover{background:#171717!important}
+html.dark .bg-surface-container-high,html.dark .hover\:bg-surface-container-high:hover{background:#1f1f1f!important}
+html.dark .bg-surface-container-highest{background:#262626!important}
+html.dark .bg-surface-container-lowest,html.dark .bg-surface-container-lowest\/95,html.dark .bg-surface-container-lowest\/80{background:#0a0a0a!important}
+html.dark .bg-surface-variant{background:#1f1f1f!important}
+html.dark .bg-primary{background:#16a34a!important}
+html.dark .bg-primary\/60{background:rgba(0,0,0,.6)!important}
+html.dark .bg-primary-container{background:#14532d!important}
+html.dark .bg-primary-fixed,html.dark .bg-primary-fixed-dim{background:#14532d!important}
+html.dark .bg-surface-tint\/20{background:rgba(34,197,94,.2)!important}
+html.dark .ring-surface-container-high{--tw-ring-color:#404040!important}
+html.dark .text-primary,html.dark .text-on-surface{color:#ffffff!important}
+html.dark .text-primary-container,html.dark .text-on-primary-container{color:#bbf7d0!important}
+html.dark .text-on-primary-fixed,html.dark .text-on-primary-fixed-variant{color:#bbf7d0!important}
+html.dark .text-on-surface-variant{color:#a3a3a3!important}
+html.dark .text-secondary{color:#4ade80!important}
+html.dark .border-outline-variant,html.dark [class*="border-surface-container"]{border-color:#262626!important}
+html.dark input,html.dark select,html.dark textarea{color:#ffffff;background:#111111}
+html.dark .bg-primary-container .text-primary-container,html.dark .bg-primary-container.text-on-primary{color:#fff!important}
+html.dark header{box-shadow:0 1px 8px rgba(0,0,0,.6)!important}
+html.dark .bg-secondary-fixed\/30.text-on-secondary-fixed-variant,html.dark .bg-secondary-fixed\/40.text-on-secondary-fixed-variant,html.dark .bg-secondary-container\/40.text-on-secondary-fixed-variant,html.dark .bg-secondary-fixed\/50.text-on-secondary-fixed,html.dark .bg-secondary-fixed\/60.text-on-secondary-fixed,html.dark .bg-secondary-container\/40.text-on-secondary-container{background:rgba(22,163,74,.32)!important;color:#bbf7d0!important}
+html.dark .bg-secondary-fixed\/30.text-on-secondary-fixed-variant .bg-secondary,html.dark .bg-secondary-fixed\/40.text-on-secondary-fixed-variant .bg-secondary,html.dark .bg-secondary-fixed\/50.text-on-secondary-fixed .bg-secondary,html.dark .bg-secondary-fixed\/60.text-on-secondary-fixed .bg-secondary,html.dark .bg-secondary-container\/40.text-on-secondary-container .bg-secondary{background:#ffffff!important}
+.bg-primary\/60{background:rgba(0,0,0,.6)!important}
+</style></head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen" data-page="offres"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.05)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-xs"><img alt="MicroCampus Logo" class="h-8 w-auto object-contain" src="logo.png"/><span class="font-headline-sm text-headline-sm text-primary-container tracking-tight">MicroCampus</span></div><div class="flex items-center gap-space-xs"><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span></button><a class="w-11 h-11 flex items-center justify-center" data-path="profil" href="profil.html"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-surface-container-high" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjMTQ1MzJkIi8+PHRleHQgeD0iMzIiIHk9IjQyIiBmb250LXNpemU9IjMwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjNmNmOGJiIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtd2VpZ2h0PSI3MDAiPkE8L3RleHQ+PC9zdmc+"/></a></div></div></header><main class="flex-1 w-full bg-surface pt-16 pb-28"><div class="flex flex-col w-full pb-8">
+<!-- En-tête contextuel & Filtres -->
+<div class="px-margin pt-4 pb-2">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed mb-2.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm tracking-wide uppercase font-semibold">Avantages vérifiés · Québec</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight mb-1.5">
+      Offres bancaires pour étudiants
+    </h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+      Sélection d'avantages exclusifs, partenariats financiers et rabais locaux pour financer et simplifier tes études.
+    </p>
+<!-- Scroll horizontal des pilules de filtrage -->
+<div class="flex items-center gap-2 overflow-x-auto no-scrollbar pt-4 pb-1 -mx-margin px-margin" id="filter-container">
+<button class="filter-btn active flex-shrink-0 px-4 py-2 rounded-full font-label-md text-label-md bg-primary-container text-on-primary shadow-sm transition-all" onclick="setFilter('all', this)">
+        Toutes les offres
+      </button>
+<button class="filter-btn flex-shrink-0 px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-all" onclick="setFilter('bank', this)">
+        Banques &amp; Crédit
+      </button>
+<button class="filter-btn flex-shrink-0 px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-all" onclick="setFilter('local', this)">
+        Commerces locaux
+      </button>
+<button class="filter-btn flex-shrink-0 px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-all" onclick="setFilter('new', this)">
+        Nouveautés
+      </button>
+</div>
+</div>
+<!-- Note d'indépendance éditoriale / bandeau de confiance -->
+<div class="px-margin my-3">
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-primary font-semibold">Sélection 100 % rigoureuse &amp; sans piège</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Aucun produit à taux d'intérêt caché. Nos partenaires respectent la charte de protection étudiante de MicroCampus.
+        </p>
+</div>
+</div>
+</div>
+<!-- SECTION 1 : Offres institutionnelles bancaires -->
+<section class="mt-4 px-margin flex flex-col gap-4" id="section-banks">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">account_balance</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">Offres bancaires institutionnelles</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">3 disponibles</span>
+</div>
+<!-- CARTE 1 : Compte chèques étudiant -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col gap-3 relative overflow-hidden transition-transform active:scale-[0.99]">
+<div class="flex items-center justify-between gap-2">
+<span class="font-label-sm text-[10px] uppercase font-semibold tracking-wider text-on-surface-variant/80 bg-surface-container-low px-2 py-0.5 rounded">
+          Offre bancaire · Publicité
+        </span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-on-secondary-fixed bg-secondary-fixed/60 px-2 py-0.5 rounded-full font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+          0 $/mois
+        </span>
+</div>
+<div class="flex gap-3 items-start mt-1">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center flex-shrink-0 text-primary-container">
+<svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<rect height="14" rx="2" width="20" x="2" y="5"></rect>
+<line x1="2" x2="22" y1="10" y2="10"></line>
+</svg>
+</div>
+<div class="min-w-0 flex-1">
+<h3 class="font-title-md text-title-md text-primary font-semibold leading-snug">
+            Compte chèques étudiant sans frais mensuels pendant tes études
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Partenaire Desjardins &amp; Banque Nationale. Zéro frais de tenue de compte, transactions Interac illimitées et virements instantanés sans pénalité.
+          </p>
+</div>
+</div>
+<!-- Caractéristiques phares -->
+<div class="grid grid-cols-2 gap-2 pt-1">
+<div class="bg-surface-container-low/70 rounded-lg p-2.5">
+<p class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider">Virements</p>
+<p class="font-label-md text-label-md text-primary font-semibold mt-0.5">Interac gratuit</p>
+</div>
+<div class="bg-surface-container-low/70 rounded-lg p-2.5">
+<p class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider">Période</p>
+<p class="font-label-md text-label-md text-primary font-semibold mt-0.5">Durée du cursus</p>
+</div>
+</div>
+<div class="pt-1 flex items-center gap-3">
+<button class="w-full h-12 rounded-xl bg-primary-container text-on-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-2 hover:bg-primary transition-colors">
+<span>Ouvrir un compte</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<p class="font-body-sm text-[10px] text-outline text-center">
+        Conforme aux règles de l'Autorité des marchés financiers (AMF). Sujet à approbation.
+      </p>
+</div>
+<!-- CARTE 2 : Carte de crédit étudiante -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col gap-3 relative overflow-hidden transition-transform active:scale-[0.99]">
+<div class="flex items-center justify-between gap-2">
+<span class="font-label-sm text-[10px] uppercase font-semibold tracking-wider text-on-surface-variant/80 bg-surface-container-low px-2 py-0.5 rounded">
+          Partenaire bancaire vérifié · Publicité
+        </span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary-container bg-surface-container-highest px-2 py-0.5 rounded-full font-semibold">
+          Sans frais annuels
+        </span>
+</div>
+<div class="flex gap-3 items-start mt-1">
+<div class="w-12 h-12 rounded-xl bg-primary-container text-on-primary flex items-center justify-center flex-shrink-0 shadow-sm">
+<svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<rect height="16" rx="2" ry="2" width="22" x="1" y="4"></rect>
+<line x1="1" x2="23" y1="10" y2="10"></line>
+<circle cx="17" cy="15" r="1.5"></circle>
+</svg>
+</div>
+<div class="min-w-0 flex-1">
+<h3 class="font-title-md text-title-md text-primary font-semibold leading-snug">
+            Carte de crédit étudiante : bâtis ta cote dès ta 1<sup>re</sup> session
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Limite sécurisée de 500 $ à 1 000 $, 1,5 % de remise en argent sur l'épicerie et les cafés de campus, déclarée mensuellement à Equifax et TransUnion.
+          </p>
+</div>
+</div>
+<!-- Mini-stats bar -->
+<div class="flex items-center justify-between bg-surface-container-low/70 rounded-lg p-2.5">
+<div>
+<p class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider">Limite initiale</p>
+<p class="font-label-md text-label-md text-primary font-semibold">500 $ – 1 000 $</p>
+</div>
+<div class="text-right">
+<p class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider">Remise étudiante</p>
+<p class="font-label-md text-label-md text-secondary font-semibold">1,5 % en argent</p>
+</div>
+</div>
+<div class="pt-1">
+<button class="w-full h-12 rounded-xl bg-surface-container-high text-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-2 hover:bg-surface-container-highest transition-colors">
+<span>Voir la carte</span>
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</button>
+</div>
+<p class="font-body-sm text-[10px] text-outline text-center">
+        Le maintien de paiements ponctuels est requis pour protéger ta cote de crédit personnelle.
+      </p>
+</div>
+<!-- CARTE 3 : Compte épargne étudiant -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col gap-3 relative overflow-hidden transition-transform active:scale-[0.99]">
+<div class="flex items-center justify-between gap-2">
+<span class="font-label-sm text-[10px] uppercase font-semibold tracking-wider text-on-surface-variant/80 bg-surface-container-low px-2 py-0.5 rounded">
+          Offre bancaire · Publicité
+        </span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-tertiary bg-tertiary-fixed px-2 py-0.5 rounded-full font-semibold">
+          ★ Prime 50 $
+        </span>
+</div>
+<div class="flex gap-3 items-start mt-1">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed/50 text-secondary flex items-center justify-center flex-shrink-0">
+<svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<path d="M12 2v20"></path>
+<path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+</svg>
+</div>
+<div class="min-w-0 flex-1">
+<h3 class="font-title-md text-title-md text-primary font-semibold leading-snug">
+            Compte d'épargne étudiant avec bonus de bienvenue
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Taux promotionnel avantageux de 3,50 % pour tes économies d'été ou les droits de scolarité d'automne. Prime de 50 $ déposée au premier transfert automatique.
+          </p>
+</div>
+</div>
+<!-- Highlights -->
+<div class="flex items-center gap-2">
+<div class="flex-1 bg-surface-container-low/70 rounded-lg p-2.5">
+<p class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider">Taux d'intérêt</p>
+<p class="font-amount-card text-[20px] text-secondary font-bold">3,50 %</p>
+</div>
+<div class="flex-1 bg-surface-container-low/70 rounded-lg p-2.5">
+<p class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider">Bonus de départ</p>
+<p class="font-amount-card text-[20px] text-primary font-bold">+50,00 $</p>
+</div>
+</div>
+<div class="pt-1">
+<button class="w-full h-12 rounded-xl bg-surface-container-high text-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-2 hover:bg-surface-container-highest transition-colors">
+<span>Découvrir</span>
+<span class="material-symbols-outlined text-[18px]">savings</span>
+</button>
+</div>
+<p class="font-body-sm text-[10px] text-outline text-center">
+        Admissible à l'assurance-dépôts de la SADC. Offre limitée pour la rentrée universitaire québécoise.
+      </p>
+</div>
+</section>
+<!-- SECTION 2 : Partenaires locaux du campus -->
+<section class="mt-8 px-margin flex flex-col gap-4" id="section-local">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-secondary text-[22px]">storefront</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">Partenaires locaux du campus</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Rabais négociés près de ton université sur simple présentation de ton statut étudiant ou de l'app.
+      </p>
+</div>
+<!-- PARTENAIRE 1 : Café Le Bouquin -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant bg-surface-container-low px-2 py-0.5 rounded-full font-medium">
+<span class="material-symbols-outlined text-[14px]">local_cafe</span>
+          Café &amp; Détente
+        </span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold bg-secondary-fixed/50 px-2 py-0.5 rounded-full">
+          -2,00 $
+        </span>
+</div>
+<div class="flex items-start gap-3.5">
+<img class="w-16 h-16 rounded-lg object-cover flex-shrink-0 bg-surface-container" data-alt="Cozy university neighborhood cafe in Sherbrooke with wooden tables, warm morning sunlight, books on shelves, and an espresso machine brewing artisan coffee" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMCA2Ij48cmVjdCB3aWR0aD0iMTAiIGhlaWdodD0iNiIgZmlsbD0iIzE0NTMyZCIvPjwvc3ZnPg=="/>
+<div class="min-w-0 flex-1">
+<h3 class="font-title-md text-title-md text-primary font-semibold">Café Le Bouquin</h3>
+<p class="font-body-sm text-body-sm text-primary font-medium mt-0.5">
+            2 $ de rabais sur ton premier café filtre avec ta carte étudiante
+          </p>
+<p class="font-body-sm text-[11px] text-on-surface-variant mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-secondary">pin_drop</span>
+            Côte-des-Neiges &amp; Mile-End (scan à la caisse)
+          </p>
+</div>
+</div>
+<div class="pt-1 flex items-center gap-2">
+<button class="flex-1 h-10 rounded-lg bg-surface-container-high text-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-1.5 active:bg-surface-container-highest transition-colors" onclick="revealVoucher(this, 'BOUQUIN-CAMPUS-24')">
+<span class="material-symbols-outlined text-[16px]">qr_code_2</span>
+<span>Afficher le coupon</span>
+</button>
+</div>
+</div>
+<!-- PARTENAIRE 2 : Impression Express -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant bg-surface-container-low px-2 py-0.5 rounded-full font-medium">
+<span class="material-symbols-outlined text-[14px]">print</span>
+          Services campus
+        </span>
+<span class="font-label-sm text-label-sm text-primary font-semibold bg-surface-container-high px-2 py-0.5 rounded-full">
+          Dès 0,09 $/page
+        </span>
+</div>
+<div class="flex items-start gap-3.5">
+<img class="w-16 h-16 rounded-lg object-cover flex-shrink-0 bg-surface-container" data-alt="Modern print shop counter near university campus with bound thesis reports, color laser printers, and neatly organized student projects" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMCA2Ij48cmVjdCB3aWR0aD0iMTAiIGhlaWdodD0iNiIgZmlsbD0iIzE0NTMyZCIvPjwvc3ZnPg=="/>
+<div class="min-w-0 flex-1">
+<h3 class="font-title-md text-title-md text-primary font-semibold">Impression Express</h3>
+<p class="font-body-sm text-body-sm text-primary font-medium mt-0.5">
+            Ton travail de session imprimé et relié dès 0,09 $ la page
+          </p>
+<p class="font-body-sm text-[11px] text-on-surface-variant mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-secondary">schedule</span>
+            Reliure spirale offerte dès 40 pages · Prêt en 2h
+          </p>
+</div>
+</div>
+<div class="pt-1 flex items-center gap-2">
+<button class="flex-1 h-10 rounded-lg bg-surface-container-high text-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-1.5 active:bg-surface-container-highest transition-colors" onclick="revealVoucher(this, 'SESSION-EXPRESS-2024')">
+<span class="material-symbols-outlined text-[16px]">qr_code_2</span>
+<span>Utiliser le rabais</span>
+</button>
+</div>
+</div>
+</section>
+<!-- CARTE D'ENGAGEMENT ÉTHIQUE & TRANSPARENCE -->
+<section class="mt-8 px-margin">
+<div class="bg-primary-container text-on-primary rounded-xl p-5 shadow-sm relative overflow-hidden">
+<!-- Arrière-plan subtil et sécuritaire -->
+<div class="flex items-start gap-3.5 relative z-10">
+<div class="w-10 h-10 rounded-full bg-on-primary/10 flex items-center justify-center flex-shrink-0 text-secondary-fixed">
+<span class="material-symbols-outlined text-[22px]">health_and_safety</span>
+</div>
+<div class="min-w-0 flex-1">
+<h3 class="font-title-md text-title-md text-on-primary font-bold">
+            Charte éthique MicroCampus
+          </h3>
+<p class="font-body-sm text-body-sm text-on-primary/70 mt-1.5 leading-relaxed">
+            Nous refusons tout partenariat comportant des taux prédateurs, des frais cachés ou des cartes à garanties abusives. Notre mission prioritaire est de protéger la cote de crédit et le bien-être financier des étudiants québécois.
+          </p>
+<div class="mt-3 flex items-center gap-2 text-secondary-fixed">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span class="font-label-sm text-label-sm font-semibold">100 % transparent &amp; vérifié</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- PIED DE PAGE : Espace Partenaires & Mentions Réglementaires -->
+<footer class="mt-8 px-margin flex flex-col items-center gap-4 text-center">
+<a class="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-surface-container-low text-primary-container hover:bg-surface-container-high transition-colors font-label-md text-label-md font-medium" href="#">
+<span class="material-symbols-outlined text-[18px]">handshake</span>
+<span>Espace partenaires : annoncer sur MicroCampus</span>
+</a>
+<div class="space-y-1.5 max-w-xs text-outline font-body-sm text-[11px] leading-tight">
+<p>
+        Les offres affichées peuvent générer une rémunération pour MicroCampus sans coût supplémentaire pour l'utilisateur.
+      </p>
+<p>
+        Consultez les modalités contractuelles auprès de chaque émetteur agréé par l'AMF et les organismes de réglementation canadiens.
+      </p>
+<p class="pt-2 text-outline/80">
+        © 2024 MicroCampus Inc. Tous droits réservés. Sherbrooke, Québec.
+      </p>
+</div>
+</footer>
+</div>
+<script>
+  function setFilter(type, el) {
+    const buttons = document.querySelectorAll('.filter-btn');
+    buttons.forEach(btn => {
+      btn.classList.remove('bg-primary-container', 'text-on-primary', 'shadow-sm');
+      btn.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+    });
+
+    el.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+    el.classList.add('bg-primary-container', 'text-on-primary', 'shadow-sm');
+
+    const bankSec = document.getElementById('section-banks');
+    const localSec = document.getElementById('section-local');
+
+    if (type === 'all' || type === 'new') {
+      bankSec.style.display = 'flex';
+      localSec.style.display = 'flex';
+    } else if (type === 'bank') {
+      bankSec.style.display = 'flex';
+      localSec.style.display = 'none';
+    } else if (type === 'local') {
+      bankSec.style.display = 'none';
+      localSec.style.display = 'flex';
+    }
+  }
+
+  function revealVoucher(btn, code) {
+    btn.innerHTML = `<span class="material-symbols-outlined text-[16px] text-secondary">check</span><span class="font-bold text-secondary font-mono">${code}</span>`;
+    btn.classList.remove('bg-surface-container-high');
+    btn.classList.add('bg-secondary-fixed/50');
+  }
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 bg-surface-container-lowest/95 backdrop-blur-xl pb-safe shadow-[0_-4px_20px_rgba(0,0,0,0.06)]" data-active-classes="text-primary-container font-semibold"><div class="flex justify-around items-center h-16 px-gutter-sm"><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant transition-colors group" data-path="accueil" href="index.html"><span class="material-symbols-outlined text-[24px]">account_balance</span><span class="font-label-sm text-[10px] leading-tight mt-1">Accueil</span><span class="w-1 h-1 rounded-full bg-secondary opacity-0 group-[.text-primary-container]:opacity-100 transition-opacity mt-0.5"></span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant transition-colors group" data-path="microprets" href="simuler.html"><span class="material-symbols-outlined text-[24px]">credit_card</span><span class="font-label-sm text-[10px] leading-tight mt-1">Microprêts</span><span class="w-1 h-1 rounded-full bg-secondary opacity-0 group-[.text-primary-container]:opacity-100 transition-opacity mt-0.5"></span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant transition-colors group" data-path="formations" href="formations.html"><span class="material-symbols-outlined text-[24px]">school</span><span class="font-label-sm text-[10px] leading-tight mt-1">Formations</span><span class="w-1 h-1 rounded-full bg-secondary opacity-0 group-[.text-primary-container]:opacity-100 transition-opacity mt-0.5"></span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant transition-colors group" data-path="finances" href="finances.html"><span class="material-symbols-outlined text-[24px]">account_balance_wallet</span><span class="font-label-sm text-[10px] leading-tight mt-1">Finances</span><span class="w-1 h-1 rounded-full bg-secondary opacity-0 group-[.text-primary-container]:opacity-100 transition-opacity mt-0.5"></span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant transition-colors group" data-path="profil" href="profil.html"><span class="material-symbols-outlined text-[24px]">person</span><span class="font-label-sm text-[10px] leading-tight mt-1">Profil</span><span class="w-1 h-1 rounded-full bg-secondary opacity-0 group-[.text-primary-container]:opacity-100 transition-opacity mt-0.5"></span></a></div></nav><script src="app.js"></script><script src="actions.js"></script></body></html>
